@@ -1,0 +1,849 @@
+/* <style> */
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    background-color: #f5f5f5;
+}
+ul, ol, li {
+    list-style: none;
+}
+p {
+    font-size: 14px;
+    word-wrap: break-word;
+    color: #333;
+    text-indent: 2em;
+    line-height: 24px;
+    zoom: 1;
+}
+/* header部分 */
+.header {
+    height: 32px;
+    border-bottom: 1px solid rgba(102,102, 102, 0.3);
+    background-color: #fff;
+    /* background-color: pink; */
+}
+.header div{
+    float: right;
+}
+.header div ul li{
+    float: left;
+}
+
+.header .headerleft li {
+    display: block;
+    margin-left: 20px;
+    line-height: 32px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Arial;
+}
+.header .headerleft li a {
+    color: black;
+}
+.header .headerleft .baike {
+    padding-right: 20px;
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    text-decoration: none;
+}
+.header .headerright li a {
+    display: block;
+    text-decoration: none;
+    padding: 0 11px;
+    font-size: 13px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+}
+.header .headerright li a:hover {
+    text-decoration: underline;
+}
+.header .headerright .first {
+    display: block;
+    line-height: 32px;
+    color: rgba(102, 102, 102,.2);
+}
+.header .headerright .zhuce {
+    padding-left: 25;
+    padding-right: 13;
+}
+/* header部分结束 */
+
+/* search部分 */
+.search {
+    width: 1000px;
+    height: 104px;
+    margin: 0 auto;
+    /* background-color: pink; */
+    /* background-color: #fff; */
+}
+.search div {
+    float: left;
+}
+.search .logo img{
+    height: 50px;
+    margin: 22px 15px;
+}
+.search .search-text {
+    width: 680px;
+    padding: 32px 0;
+}
+.search .text input {
+    /* margin: 32px 0; */
+    width: 453px;
+    padding: 6px 8px 4px 8px;
+    border: 1px 0px 1px 1px;
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    color: rgba(105,105,105,0.5);
+}
+.search .search-text .button input {
+    padding: 10px 15px;
+    border: 0;
+    height: 42px;
+    font-size: 16px;
+    background-color: rgb(51,136,255);
+    font-weight: 500;
+    color: #fff;
+}
+.search .search-text .button .button-in:hover {
+    background-color: rgb(49,126,243);
+    box-shadow: 2px 2px 1px 0.1px rgba(87, 87, 87,.1);
+}
+.search .search-text .button .button-allsearch:hover {
+    box-shadow: 2px 2px 1px 0.1px rgba(87, 87, 87,.2);
+}
+
+.search .search-text .button .button-allsearch {
+    margin: 0 3px 1px;
+    border: 1px solid rgb(51,136,255);
+    background-color: #fff;
+    color:  rgb(51,136,255);
+}
+
+.search div .help {
+    display: block;
+    line-height: 104px;
+    padding-top: 10px;
+    font-size: 11px;
+    color: gray;
+}
+.search .search-logo a img {
+    margin: 20px 30px;
+    height: 50px;
+}
+/* 搜索框结束 */
+/* header 结束 */
+
+/* 声明 statement */
+.statement {
+    position: relative;
+    display: block;
+    width: 980px;
+    height: 17.6px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: #f9f4d9;
+    color: #8f7f5d;
+}
+.statement div {
+    float: left;
+}
+.statement .shutdown {
+    float: right;
+}
+.statement .statement-content {
+    font-size: 13px;
+}
+.statement .statement-more a {
+    display: block;
+    text-decoration: none;
+    margin: 0px 3px 3px 2px;
+    height: 17.6px;
+    font-size: 12px;
+    color: #338de6;
+}
+.statement .statement-more a:hover {
+    text-decoration: underline;
+}
+.statement .shutdown a {
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+    text-decoration: none;
+    margin: 0px -5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+/* 声明结束 */
+/* 菜单 menu */
+.menu {
+    position: relative;
+    top: 2px;
+    height: 404px;
+    border-top: 1px solid #5895d5;
+    border-bottom: 1px solid #3b92e9;
+    background: #459df5;
+}
+.menu .layout {
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+}
+.menu .layout .menu-title .draw {
+    display: none;
+    position: relative;
+    z-index: 15;
+    width: 124px;
+    height: 258px;
+    
+}
+
+.menu .layout .menu-title:hover .draw {
+    display: block;
+    height:190px;
+    padding-top: 10px;
+    background-color: rgba(35,94,156,.8);
+    color: white;
+}
+.menu .layout .menu-title .menu-nave .login div:hover .draw {
+    display: none;
+    /* height:190px;
+    padding-top: 10px;
+    background-color: rgba(35,94,156,.8);
+    color: white; */
+}
+
+.menu .layout .menu-title .nav-home .draw:hover,
+.menu .layout .menu-title .nav-home input:hover,
+.menu .layout .menu-title .nav-cate .draw:hover,
+.menu .layout .menu-title .nav-cate input:hover,
+.menu .layout .menu-title .nav-miaodong .draw:hover,
+.menu .layout .menu-title .nav-miaodong input:hover,
+.menu .layout .menu-title .nav-tese .draw:hover,
+.menu .layout .menu-title .nav-tese input:hover,
+.menu .layout .menu-title .nav-user .draw:hover,
+.menu .layout .menu-title .nav-user input:hover,
+.menu .layout .menu-title .nav-cop .draw:hover,
+.menu .layout .menu-title .nav-cop input:hover {
+    display: block;
+    background-color: rgb(25,80,139);
+}
+/* overflow: hidden;         
+藏起来 */
+/* 鼠标滑过可视 */
+/* .menu .layout:hover {
+    overflow: visible; ;
+} */
+.menu .layout .menu-title .menu-nav .draw div a,
+.menu .layout .menu-title .menu-nav .draw ul li a {
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    color: #a2c9f0;
+}
+.menu .layout .menu-title .menu-nav .draw div a:hover,
+.menu .layout .menu-title .menu-nav .draw ul li a:hover {
+    border-bottom: 3px solid white;
+}
+
+.menu .layout .menu-title>.menu-nav {
+    float: left;
+    width: 104px;
+    height: 43px;
+}
+
+.menu .layout .menu-title .menu-nav div{
+    height: 30px;
+    width: 104px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.menu .layout .menu-title .menu-nav input {
+    height: 43px;
+    width: 104px;
+    border: 0px;
+    font-size: 16px;
+    color: #f5f5f5;
+    background-color: #459df5;
+}
+
+
+/* 菜单-个人中心 */
+.menu .layout .menu-title .login {
+    float: right;
+    width: 154px;
+    height: 43px;
+    position: relative; 
+}
+.menu .layout .menu-title .login img {
+    float: left;
+    position: absolute;
+    height: 25px;
+    margin: 9px 5px;
+}
+
+.menu .layout .menu-title .login div a{
+    position: absolute;
+    left: -18px;
+    top: 10px;
+    float: left;
+    text-decoration: none;
+    border-left: 1px solid #73b0ec; 
+    font-size: 16px;
+    padding-left: 48px;
+    color: #fff;
+}
+/* 菜单-个人中心结束 */
+
+
+/* 视频区域 menu-body */
+.menu-body {
+    position: relative;
+    z-index: 0;
+    top: 44px;
+    height: 360px;
+    background-color: rgb(47,79,175);
+}
+.menu-body .body-area {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+.menu-body .body-area .miaodong {
+    position: absolute;
+    /* top: 80px;
+    left: 80px; */
+    margin: 150px 0px 150px 22px;
+}
+.menu-body .body-area .miaodong img {
+    width: 70%;
+}
+
+.menu-body .body-area .yikanjiudong {
+    position: absolute;
+    top: 125px;
+    right: 5px;
+}
+.menu-body .body-area .yikanjiudong img {
+    width: 50%;
+}
+
+.menu-body .body-area .vedio-box {
+    position: absolute;
+    top: 40px;
+    left: 175px;
+    width: 780px;
+    height: 280px;
+    /* background-color: pink; */
+}
+.menu-body .body-area .vedio-box .vedio-main {
+    position: relative;
+    float: left;
+    height: 280px;
+    width: 499px;
+    /* background-color: green; */
+}
+.menu-body .body-area .vedio-box .vedio-main div {
+    position: absolute;
+    height: 280px;
+    top: 0px;
+    border: 0;
+}
+
+/* 侧边栏 vedioside */
+.menu-body .body-area .vedio-box .vedio-side {
+    position: relative;
+    left: -1px;
+    float: left;
+    height: 280px;
+    width: 210px;
+    border-radius: 0 5px 5px 0;
+    background-color: rgba(0,0,0,.5);
+}
+.menu-body .body-area .vedio-box .vedio-side a {
+    text-decoration: none;
+    color: white;
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-title {
+    position: relative;
+    height: 30px;
+    padding-top: 20px;
+    color: white;
+
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-title .xiangguan,
+.menu-body .body-area .vedio-box .vedio-side .vedio-title .tuijian {
+    float: left;
+    height: 18px;
+    width: 53px;
+    margin:0 2px;
+    font-size: 12px;
+    color: white;
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-title .xiangguan {
+    padding-left: 2px ;
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-title .tuijian a {
+    font-size: 11px;
+    color: gray;
+    padding-left: 2px;
+    border-left: 2px solid rgba(125,125,125,.7);
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-title .shangchuan {
+    float: right;
+    right: 10px;
+    top: 5px;
+    height: 100%;
+    margin-right: 5px;
+    font-size: 13px;
+    color: white;
+    background-image: url(images/bofang.png) 16px;
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-title .shangchuan img {
+    width: 10px;
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-more>div{
+    height: 60px;
+    width: 190px;
+    padding: 5px 5px;
+    margin: 8px 10px 8px 10px;
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-more .more-first {
+    position: relative;
+    padding: 3px 0;
+    z-index: 50;
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-more .more-first:hover {
+    background-color: rgba(42, 97, 224, 0.404);
+    border-radius: 5px;
+}
+
+.menu-body .body-area .vedio-box .vedio-side .vedio-more .more-first a {
+    display: inline-block;
+    position: absolute;
+    top:5px;
+    z-index: 10;
+    height: 55px;
+    width: 190px;
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-more .more-first a>div {
+    float: left;
+    height:55px;
+    width: 70px;
+}
+/* .menu-body .body-area .vedio-box .vedio-side .vedio-more .more-first a .first-image {
+    float: left;
+    width: 60px;
+} */
+.menu-body .body-area .vedio-box .vedio-side .vedio-more .more-first a .first-image img {
+    height: 55px;
+    width: 75px;
+    margin-left: 2px;
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-more .more-first .first-text {
+    float: right;
+    font-size: 12px;
+    line-height: 22px;
+    margin-right: 2px;
+    margin-left: 3px;
+    color: white;
+}
+.menu-body .body-area .vedio-box .vedio-side .vedio-more .more-first .first-text .bofangliang{
+    color: gray;
+}
+
+.menu-body .body-area .vedio-box .vedio-side .vedio-more .more-first .first-text .first-logo img {
+    float: right;
+    height: 12px;
+}
+/* 侧栏结束 */
+/* 视频区域结束 */
+/* 菜单结束 */
+
+
+/* 主介绍 main-introduce */
+.introduce {
+    margin-top: 20px;
+}
+.introduce .main {
+    position: relative;
+    width: 1015px;
+    height: 410px;
+    margin: 0 auto;
+    padding: 30px 35px;
+    border: 1px solid gray;
+    /* background-color: pink; */
+    border: solid 1px #E5E5E5;
+    box-shadow: 0 2px 3px -2px #d5d5d5;
+    font-family: arial,tahoma,'Microsoft Yahei','\5b8b\4f53',sans-serif;
+}
+.introduce .main .main-introduce {
+    float: left;
+    width: 750px;
+}
+.introduce .main .main-introduce .intro-textarea
+{
+    float: left;
+    width: 750px;
+    /* background-color: skyblue; */
+}
+
+
+/* 名字区域 */
+.introduce .main .main-introduce .intro-textarea .titlearea {
+    height: 100px;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text {
+    display: inline-block;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text {
+    width: 520px;
+}
+
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-up{
+    display: inline-block;
+    height: 39px;
+    width: 580px;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-up .title-name h1 {
+    display: inline-block;
+    float: left;
+    font-size: 35px;
+    margin-right: 15px;
+    font-weight: 400;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-up .title-border {
+    display: inline-block;
+    float: left;
+    width: auto;
+    padding: 0px 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #333;
+}
+/* 鼠标特效 */
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-up .title-border:hover {
+    border: 1px solid rgb(109, 216, 243);
+    color: white;
+    background-color: rgb(109, 216, 243);
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-up .title-border img {
+    float: left;
+    height: 15px;
+    padding-top: 6px;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-up .title-border h6 {
+    float: left;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-up a .title-add {
+    float: left;
+    margin-top: 10px;
+    padding: 4px 7px;
+    border-radius: 4px;
+    /* background-color: white; */
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-up a .title-add:hover {
+    background-color: rgb(109, 216, 243);
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-up a .title-add img{
+    height: 15px;
+}
+/* 名字区域结束 */
+
+/* 出生 */
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-down {
+    display: inline-block;
+    border-left: 3px solid #52a3f5;
+    color: #474849;
+    font-size: 14px;
+    height: 15px;
+    width: 298px;
+    background: #eef7fd;
+    margin-top: 20px;
+    padding: 2px 2px 4px 10px;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-down ul li {
+    float: left;
+    border-left: 1px solid #d1dfe8;
+    padding: 0 8px;
+    color: #474849;
+    font-size: 14px;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-text .title-text-down ul .down-first {
+    border-left: none;
+    padding: 0 8px 0;
+}
+/* 出生结束 */
+
+/* 送花花 */
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower,
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower div,
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower div img,
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower div h6 {
+    display: inline-block;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower {
+    float: right;
+    height: 87.4px;
+    width: 75px;
+    position: relative;
+    color: rgb(241,129,103);
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower>div {
+    position: absolute;
+    width: 75px;
+    margin-top: 10px;
+    float: right;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower div h6 {
+    font-size: 12px;
+    font-weight: 400;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower .flower2 {
+    display: none;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower .flower1 {
+    height: 87.4px;
+    width: 75px;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower .flower1:hover {
+    display: none;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower .flower1:hover .flower2 {
+    display: inline-block;
+}
+.introduce .main .main-introduce .intro-textarea .titlearea .title-flower div img {
+    height: 65px;
+}
+/* 送花花结束 */
+
+/* 简介 */
+.introduce .main .main-introduce .intro-text {
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+.introduce .main .main-introduce .intro-text p a {
+    color: rgb(19,110,194);
+    text-decoration: none;
+}
+.introduce .main .main-introduce .intro-text p a:hover {
+    text-decoration: underline;
+}
+
+/* 作品 */
+.introduce .main .main-introduce .selfworks {
+    height: 180px;
+}
+.introduce .main .main-introduce .selfworks div {
+    margin: 10px;
+}
+.introduce .main .main-introduce .selfworks div>div{
+    float: left;
+    position: relative;
+}
+.introduce .main .main-introduce .selfworks div div .songname {
+    position: absolute;
+    bottom: 4px;
+    margin: 0;
+    width: 82px;
+    padding: 5px 0;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+}
+.introduce .main .intro-photoarea{
+    float: right;
+    width: 263px;
+    border: solid 1px #DDD;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px #ccc;
+    position: relative;
+    font-size: 0;
+}
+/* 主介绍结束 */
+
+/* 详细内容 maincont */
+.maincont {
+    margin: 15px auto;
+    position: relative;
+    width: 1015px;
+    height: 7720px;
+    padding: 30px 35px;
+    border: 1px solid gray;
+    /* background-color: pink; */
+    border: solid 1px #E5E5E5;
+    box-shadow: 0 2px 3px -2px #d5d5d5;
+    font-family: arial,tahoma,'Microsoft Yahei','\5b8b\4f53',sans-serif;
+}
+
+.maincont .maincont-left {
+    float: left;
+    width: 780px;
+    /* background-color: pink; */
+}
+.maincont .maincont-left>div {
+    width: 780px;
+}
+
+.maincont .maincont-left .catelog {
+    height: 200px;
+}
+.maincont .maincont-left .catelog .catelog-left {
+    padding: 40px 30px;
+    float: left;
+    width: 50px;
+    height: 101px;
+    border-top: 1px solid rgba(128,128,128,.3);;
+    border-bottom: 1px solid rgba(128,128,128,.3);;
+}
+.maincont .maincont-left .catelog .catelog-left h3 {
+    display: inline-block;
+    font-weight: 400;
+}
+
+.maincont .maincont-left .catelog .catelog-right {
+    float: left;
+}
+.maincont .maincont-left .catelog .catelog-right ol {
+    float: left;
+    font-size: 16px;
+    padding: 25px 40px 25px 20px;
+    border-left: 1px solid rgba(128,128,128,.3);
+    border-top: 1px solid rgba(128,128,128,.3);
+    border-bottom: 1px solid rgba(128,128,128,.3);
+    color: #136ec2;
+}
+.maincont .maincont-left .catelog .catelog-right ol li {
+    padding: 6px;
+}
+.maincont .maincont-left .catelog .catelog-right ol li .span-left {
+    padding-right: 10px;
+}
+.maincont .maincont-left .catelog .catelog-right ol li span a {
+    text-decoration: none;
+    color: #136ec2;
+}
+.maincont .maincont-left .catelog .catelog-right ol li span a:hover {
+    text-decoration: underline;
+}
+
+
+/* 基本信息 */
+
+.maincont .maincont-left .base {
+    padding-top: 5px;
+    width: 780px;
+    height: 295px;
+    /* background-color: skyblue; */
+}
+
+.maincont .maincont-left .base .base-title .base-t {
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+    font-weight: 600;
+    border-left: 10px solid rgb(79,156,238);
+}
+.maincont .maincont-left .base .base-title .line {
+    float: left;
+    width: 630px;
+    background-color: gray;
+    margin: 12px 25px;
+    margin-left: 5px;
+    opacity: 0.2;
+}
+.maincont .maincont-left .base ol {
+    float: left;
+    font-size: 13px;
+    padding: 8px 20px;
+}
+
+.maincont .maincont-left .base ol li {
+    margin: 10px 0;
+}
+.maincont .maincont-left .base ol li span {
+    width: 120px;
+    height: 14.4px;
+    border-bottom: 2px dotted rgba(128,128,128,.5);
+}
+.maincont .maincont-left .base ol li .base-left{
+    width: 9px;
+    margin: 0 15px;
+}
+
+
+/* 主要内容 */
+.maincont .maincont-left .main-title {
+    margin: 20px 0 20px 0;
+}
+.maincont .maincont-left .main-title h3 {
+    display: inline-block;
+    float: left;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-weight: 600;
+    border-left: 10px solid rgb(79,156,238);
+}
+.maincont .maincont-left .main-title hr {
+        float: left;
+    width: 630px;
+    background-color: gray;
+    margin: 12px 25px;
+    margin-left: 5px;
+    opacity: 0.2;
+}
+
+.maincont .maincont-left div p {
+    padding: 6px 26px 0 0;
+    font-size: 14px;
+}
+
+
+.maincont .sidebar {
+    float: right;
+    width: 235px;
+    height: 800px;
+    /* background-color: skyblue; */
+}
+.maincont .sidebar div {
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: 1px solid rgba(128, 128, 128, .3);
+    box-shadow: rgb(128, 128, 128);
+    background-color: white;
+}
+.maincont .sidebar div img {
+    width: 200px;
+}
+
+.photo-fixed {
+    position: fixed;
+    top: 180px;
+    right: 0;
+}
+.photo-fixed a img {
+    width: 40px;
+
+}
+
+/* </style> */

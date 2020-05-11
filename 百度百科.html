@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度百科</title>
+    <link rel="stylesheet" href="百度百科.css">
+</head>
+
+<body>
+    <!-- header部分开始 -->
+    <!-- 导航栏部分 nav -->
+    <div class="header">
+        <div>
+            <ul class="headerright">
+                <li class="first">|</li>
+                <li><a href="#">百度首页</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#" class="zhuce">注册</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="headerleft ">
+                <li><a href="#">网页</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">贴吧</a></li>
+                <li><a href="#">知道</a></li>
+                <li><a href="#">音乐</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">地图</a></li>
+                <li><a href="#">文库</a></li>
+                <li class="baike">百科</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 搜索框 search -->
+    <div class="search">
+        <div>
+            <span class="logo"><a href="https://baike.baidu.com/"><img src="images/baike.png" alt=""></a></span>
+        </div>
+        <div class="search-text">
+            <div>
+                <span class="text"><input type="textarea" value="百度百科，搜索你想知道的"></span>
+            </div>
+            <div class="button">
+                <span><input type="button" value="进入词条" class="button-in"></span>
+            </div>
+            <div class="button">
+                <span><input type="button" value="全站搜索" class="button-allsearch"></span>
+            </div>
+        </div>
+        <div>
+            <span><a href="#" class="help">帮助</a></span>
+        </div>
+        <div>
+            <span class="search-logo"><a href="https://baike.baidu.com/"><img src="images/search.png" alt=""></a></span>
+        </div>
+        <!-- 搜索框结束 -->
+    </div>
+    <!-- header部分结束 -->
+    <!-- 声明 statement -->
+    <div class="statement">
+        <div class="statement-content">声明：百科词条人人可编辑，词条创建和修改均免费，绝不存在官方及代理商付费代编，请勿上当受骗。</div>
+        <div class="statement-more"><a href="#">详情&gt;&gt;</a></div>
+        <div class="shutdown"><a href="#">×</a></div>
+    </div>
+    <!-- 声明结束 -->
+    <!-- 菜单 Menu -->
+    <div class="menu">
+        <div class="layout">
+            <div class="menu-title">
+                <div class="menu-nav nav-home"><input type="button" value="首页">
+                    <div class="draw">
+                        <div><a href="#">历史上的今天</a></div>
+                        <div><a href="#">百科冷知识</a></div>
+                        <div><a href="#">图解百科</a></div>
+                    </div>
+                </div>
+                <div class="menu-nav nav-cate"><input type="button" value="分类">
+                    <div class="draw">
+                        <ul>
+                            <li><a href="#">艺术</a>&nbsp; &nbsp;<a href="#">科学</a></li>
+                            <li><a href="#">自然</a>&nbsp; &nbsp;<a href="#">文化</a></li>
+                            <li><a href="#">地理</a>&nbsp; &nbsp;<a href="#">生活</a></li>
+                            <li><a href="#">社会</a>&nbsp; &nbsp;<a href="#">人物</a></li>
+                            <li><a href="#">经济</a>&nbsp; &nbsp;<a href="#">体育</a></li>
+                            <li><a href="#">历史</a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-nav nav-miaodong"><input type="button" value="秒懂百科">
+                    <div class="draw">
+                        <div><a href="#">懂啦</a></div>
+                        <div><a href="#">秒懂本尊答</a></div>
+                        <div><a href="#">秒懂大师说</a></div>
+                        <div><a href="#">秒懂看瓦特</a></div>
+                        <div><a href="#">秒懂五千年</a></div>
+                        <div><a href="#">秒懂全视界</a></div>
+                    </div>
+                </div>
+                <div class="menu-nav nav-tese"><input type="button" value="特色百科">
+                    <div class="draw">
+                        <div><a href="#">数字博物馆</a></div>
+                        <div><a href="#">非遗百科</a></div>
+                        <div><a href="#">城市百科</a></div>
+                        <div><a href="#">恐龙百科</a></div>
+                        <div><a href="#">多肉百科</a></div>
+                    </div>
+                </div>
+                <div class="menu-nav nav-user"><input type="button" value="用户">
+                    <div class="draw">
+                        <div><a href="#">蝌蚪团</a></div>
+                        <div><a href="#">燃梦计划</a></div>
+                        <div><a href="#">分类达人</a></div>
+                        <div><a href="#">百科任务</a></div>
+                        <div><a href="#">百科商城</a></div>
+                    </div>
+                </div>
+                <div class="menu-nav nav-cop"><input type="button" value="权威合作">
+                    <div class="draw">
+                        <div><a href="#">合作模式</a></div>
+                        <div><a href="#">常见问题</a></div>
+                        <div><a href="#">联系方式</a></div>
+                    </div>
+                </div>
+                <div class="login">
+                    <div><img src="images/usercenter.png" alt=""></div>
+                    <div><a href="#">个人中心</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- 视频区域 vedio -->
+        <div class="menu-body">
+            <div class="body-area">
+                <div class="miaodong"><img src="https://baikebcs.bdimg.com/front-end/second-know/img/logo.png" alt="">
+                </div>
+                <div class="vedio-box">
+                    <div class="vedio-main">
+                        <!-- <div class="vedio-pic"><img
+                                src="https://bkimg.cdn.bcebos.com/pic/a71ea8d3fd1f4134bd10b0482f1f95cad1c85ee4?x-bce-process=image/resize,m_fill,w_380,h_280,align_0"
+                                alt=""></div> -->
+                        <div><video preload="auto" src="http://www.olives.fun/000.mp4" height="280px" width="500px"
+                                controls></video></div>
+                    </div>
+                    <!-- 侧栏 side -->
+                    <div class="vedio-side">
+                        <div class="vedio-title">
+                            <div class="xiangguan">
+                                <a href="#">相关视频</a>
+                            </div>
+                            <div class="tuijian"><a href="#">推荐视频</a></div>
+                            <div class="shangchuan">
+                                <a href="#"><img src="images/bofang.png" alt=""></a>
+                                <a href="#">上传视频</a>
+                            </div>
+                        </div>
+                        <div class="vedio-more">
+                            <div class="more-first">
+                                <a href="#">
+                                    <div class="first-image"><img src="images/vedio.jpg" alt="">
+                                    </div>
+                                </a>
+                                <div class="first-text">
+                                    <div class="jieshao">一分钟了解特洛耶...</div>
+                                    <div class="bofangliang">156万播放</div>
+                                    <div class="first-logo">
+                                        <img src="images/more.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-first">
+                                <a href="#">
+                                    <div class="first-image"><img src="images/vedio2.png" alt="">
+                                    </div>
+                                </a>
+                                <div class="first-text">
+                                    <div class="jieshao">rainbow彩虹少年...</div>
+                                    <div class="bofangliang">4.3万播放</div>
+                                    <div class="first-logo">
+                                        <img src="images/more.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-first">
+                                <a href="#">
+                                    <div class="first-image"><img src="images/vedio3.jpg" alt="">
+                                    </div>
+                                </a>
+                                <div class="first-text">
+                                    <div class="jieshao">特洛耶·希文：2岁...</div>
+                                    <div class="bofangliang">10.6万播放</div>
+                                    <div class="first-logo">
+                                        <img src="images/more.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="yikanjiudong"><img
+                        src="https://bkssl.bdimg.com/static/wiki-lemma/widget/lemma_content/configModule/secondsKnowLarge/img/sub-slogen_cef21db.svg"
+                        alt=""></div>
+            </div>
+        </div>
+        <!-- 侧栏结束 -->
+        <!-- 视频区域结束 -->
+        <!-- 菜单结束 -->
+    </div>
+    <!-- 主介绍 main-introduce -->
+    <div class="introduce">
+        <div class="main">
+            <div class="main-introduce">
+                <div class="intro-textarea">
+                    <div class="titlearea">
+                        <div class="title-text">
+                            <!-- 名字+编辑区+出生日期 框 -->
+                            <div class="title-text-up">
+                                <div class="title-name">
+                                    <h1>特洛耶·希文</h1>
+                                </div>
+                                <a href="#">
+                                    <div class="title-border">
+                                        <img src="images/edit.png" alt="">
+                                        <h6>编辑</h6>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="title-border">
+                                        <img src="images/conversation.png" alt="">
+                                        <h6>讨论</h6>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="title-border">
+                                        <img src="images/play.png" alt="">
+                                        <h6>上传视频</h6>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="title-add">
+                                        <img src="images/add.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="title-text-down">
+                                <ul>
+                                    <li class="down-first">1995年6月5日</li>
+                                    <li>南非约翰内斯堡</li>
+                                    <li>澳大利亚</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 送花框 -->
+                        <div class="title-flower">
+                            <div class="flower1">
+                                <img src="images/flower.png" alt="">
+                                <h6>送花花</h6>
+                            </div>
+                            <div class="flower2">
+                                <img src="images/flower.png" alt="">
+                                <h6>5201314</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 文字框 -->
+                <div class="intro-text">
+                    <p>
+                        特洛耶·希文（Troye Sivan），1995年6月5日出生于<a href="#">南非约翰内斯堡</a>，南非裔澳大利亚歌手、演员。
+                    </p>
+                    <p>2007年，在<a href="#">YouTube</a> 平台翻唱歌曲《<a href="#">Tell Me Why</a>》
+                        ，获得大众的关注。2008年，在电影《X战警前传：金刚狼》中出演少年时期的“<a href="#">金刚狼</a>”<a
+                            href="#">詹姆斯·豪利特</a>。2011年，凭借电影《马铃薯》提名南非电影电视奖电影长片类最佳男主角奖
+                        。2013年，发行个人首张音乐EP《<a href="#">TRXYE</a>》。2014年，入选《<a href="#">时代周刊</a>》“2014年网络最具有影响力青少年25位”
+                        。2015年，获得儿童选择奖“最受欢迎澳大利亚/新西兰网络红人奖” ，并发行个人第二张音乐EP《<a href="#">WILD</a>》，12月发行个人首张音乐专辑《<a
+                            href="#">Blue Neighbourhood</a>》
+                        。2018年，发行个人第二张音乐专辑《<a href="#">Bloom</a>》。</p>
+                </div>
+                <!-- 作品框 -->
+                <div class="selfworks">
+                    <H4>代表<em>作品</em></H4>
+                    <div>
+                        <div>
+                            <a href="#">
+                                <img src="images/YOUTH.jpg" title="YOUTH">
+                                <div class="songname">YOUTH</div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/wild.jpg" title="wild">
+                                <div class="songname">wild</div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/blue.jpg" title="blue">
+                                <div class="songname">blue</div>
+                            </a>
+                        </div>
+                        <div><a href="#">
+                                <img src="images/talk me down.jpg" title="talk me down">
+                                <div class="songname">Talk me down</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-photoarea">
+                <div>
+                    <img src="images/bigphoto.jpg" alt="">
+                </div>
+                <div>
+                    图集<img src="photo" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主介绍结束 -->
+
+    <!-- 详细内容 maincont -->
+    <div class="maincont">
+        <div class="maincont-left">
+            <div class="catelog">
+                <!-- 目录框 -->
+                <div class="catelog-left">
+                    <h3>目录</h3>
+                </div>
+                <div class="catelog-right">
+                    <ol>
+                        <li>
+                            <span class="span-left">1</span>
+                            <span>
+                                <a href="#1">早年经历</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="span-left">2</span>
+                            <span>
+                                <a href="#2">演艺经历</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="span-left">3</span>
+                            <span>
+                                <a href="#3">个人生活</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="span-left">4</span>
+                            <span>
+                                <a href="#4">主要作品</a>
+                            </span>
+                        </li>
+                    </ol>
+                    <ol>
+                        <li>
+                            <span class="span-left">5</span>
+                            <span>
+                                <a href="#5">演唱会记录</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="span-left">6</span>
+                            <span>
+                                <a href="#6">社会活动</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="span-left">7</span>
+                            <span>
+                                <a href="#7">获奖记录</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="span-left">8</span>
+                            <span>
+                                <a href="#8">人物评价</a>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- 基本信息框 -->
+            <div class="base">
+                <div class="base-title">
+                    <h3 class="base-t">基本信息</h3>
+                    <hr class="line">
+                </div>
+                <ol>
+                    <li>
+                        <span class="base-left">中文名</span>
+                        <span>特洛耶·希文</span>
+                    </li>
+                    <li>
+                        <span class="base-left">外文名</span>
+                        <span>Troye Sivan</span>
+                    </li>
+                    <li>
+                        <span class="base-left">别&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+                        <span>戳爷、小T、Troye Sivan Mellet</span>
+                    </li>
+                    <li>
+                        <span class="base-left">国&nbsp;&nbsp;&nbsp;&nbsp;籍</span>
+                        <span>澳大利亚</span>
+                    </li>
+                    <li>
+                        <span class="base-left">民&nbsp;&nbsp;&nbsp;&nbsp;族</span>
+                        <span>犹太族</span>
+                    </li>
+                    <li>
+                        <span class="base-left">星&nbsp;&nbsp;&nbsp;&nbsp;座</span>
+                        <span>双子座</span>
+                    </li>
+                    <li>
+                        <span class="base-left">血&nbsp;&nbsp;&nbsp;&nbsp;型</span>
+                        <span>O型</span>
+                    </li>
+                    <li>
+                        <span class="base-left">身&nbsp;&nbsp;&nbsp;&nbsp;高</span>
+                        <span>174cm</span>
+                    </li>
+                    <li>
+                        <span class="base-left">体&nbsp;&nbsp;&nbsp;&nbsp;重</span>
+                        <span>50kg</span>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <span class="base-left">中文名</span>
+                        <span>特洛耶·希文</span>
+                    </li>
+                    <li>
+                        <span class="base-left">外文名</span>
+                        <span>Troye Sivan</span>
+                    </li>
+                    <li>
+                        <span class="base-left">别&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+                        <span>戳爷、小T、Troye Sivan Mellet</span>
+                    </li>
+                    <li>
+                        <span class="base-left">国&nbsp;&nbsp;&nbsp;&nbsp;籍</span>
+                        <span>澳大利亚</span>
+                    </li>
+                    <li>
+                        <span class="base-left">民&nbsp;&nbsp;&nbsp;&nbsp;族</span>
+                        <span>犹太族</span>
+                    </li>
+                    <li>
+                        <span class="base-left">星&nbsp;&nbsp;&nbsp;&nbsp;座</span>
+                        <span>双子座</span>
+                    </li>
+                    <li>
+                        <span class="base-left">血&nbsp;&nbsp;&nbsp;&nbsp;型</span>
+                        <span>O型</span>
+                    </li>
+                    <li>
+                        <span class="base-left">身&nbsp;&nbsp;&nbsp;&nbsp;高</span>
+                        <span>174cm</span>
+                    </li>
+                    <li>
+                        <span class="base-left">体&nbsp;&nbsp;&nbsp;&nbsp;重</span>
+                        <span class="base-left">50kg</span>
+                    </li>
+                </ol>
+            </div>
+            <!-- 所有内容框 加id名用来定位。锚点链接 -->
+            <div id="1" class="main-title main-first">
+                <h3>早年经历</h3>
+                <hr class="line">
+                <img src="images/jianjie.gif" alt="">
+                <p>特洛耶·希文出生于南非约翰内斯堡。在他两岁时，全家移居至澳大利亚西部珀斯。特洛耶·希文的爸爸是房地产经纪人，出生于一个犹太家庭
+                    。妈妈是全职家庭主妇，皈依犹太教。特洛耶·希文是作为传统的犹太人长大，曾就读于一所犹太学校 。特洛耶·希文有庆祝犹太安息日
+                    。2007年，特洛耶·希文开启YouTube自媒体频道，并上传了翻唱《Tell Me Why》的视频，获得大众的关注，一个月时间获得了2.7万订阅数 。</p><br>
+                <img src="images/zaonian1.jpg" alt="">
+                <img src="images/zaonian2.jpg" alt="">
+            </div>
+            <div id="2" class="main-title main-first">
+                <h3>演艺经历</h3>
+                <hr class="line">
+                <img src="images/jianjie.gif" alt="">
+                <p>特洛耶·希文出生于南非约翰内斯堡。在他两岁时，全家移居至澳大利亚西部珀斯。特洛耶·希文的爸爸是房地产经纪人，出生于一个犹太家庭
+                    。妈妈是全职家庭主妇，皈依犹太教。特洛耶·希文是作为传统的犹太人长大，曾就读于一所犹太学校 。特洛耶·希文有庆祝犹太安息日
+                    。2007年，特洛耶·希文开启YouTube自媒体频道，并上传了翻唱《Tell Me Why》的视频，获得大众的关注，一个月时间获得了2.7万订阅数 。</p><br>
+                <img src="images/zaonian1.jpg" alt="">
+                <img src="images/zaonian2.jpg" alt="">
+            </div>
+            <div id="3" class="main-title main-first">
+                <h3>个人生活</h3>
+                <hr class="line">
+                <img src="images/jianjie.gif" alt="">
+                <p>特洛耶·希文出生于南非约翰内斯堡。在他两岁时，全家移居至澳大利亚西部珀斯。特洛耶·希文的爸爸是房地产经纪人，出生于一个犹太家庭
+                    。妈妈是全职家庭主妇，皈依犹太教。特洛耶·希文是作为传统的犹太人长大，曾就读于一所犹太学校 。特洛耶·希文有庆祝犹太安息日
+                    。2007年，特洛耶·希文开启YouTube自媒体频道，并上传了翻唱《Tell Me Why》的视频，获得大众的关注，一个月时间获得了2.7万订阅数 。</p><br>
+                <img src="images/zaonian1.jpg" alt="">
+                <img src="images/zaonian2.jpg" alt="">
+            </div>
+            <div id="4" class="main-title main-first">
+                <h3>主要作品</h3>
+                <hr class="line">
+                <img src="images/jianjie.gif" alt="">
+                <p>特洛耶·希文出生于南非约翰内斯堡。在他两岁时，全家移居至澳大利亚西部珀斯。特洛耶·希文的爸爸是房地产经纪人，出生于一个犹太家庭
+                    。妈妈是全职家庭主妇，皈依犹太教。特洛耶·希文是作为传统的犹太人长大，曾就读于一所犹太学校 。特洛耶·希文有庆祝犹太安息日
+                    。2007年，特洛耶·希文开启YouTube自媒体频道，并上传了翻唱《Tell Me Why》的视频，获得大众的关注，一个月时间获得了2.7万订阅数 。</p><br>
+                <img src="images/zaonian1.jpg" alt="">
+                <img src="images/zaonian2.jpg" alt="">
+            </div>
+            <div id="5" class="main-title main-first">
+                <h3>演唱会记录</h3>
+                <hr class="line">
+                <img src="images/jianjie.gif" alt="">
+                <p>特洛耶·希文出生于南非约翰内斯堡。在他两岁时，全家移居至澳大利亚西部珀斯。特洛耶·希文的爸爸是房地产经纪人，出生于一个犹太家庭
+                    。妈妈是全职家庭主妇，皈依犹太教。特洛耶·希文是作为传统的犹太人长大，曾就读于一所犹太学校 。特洛耶·希文有庆祝犹太安息日
+                    。2007年，特洛耶·希文开启YouTube自媒体频道，并上传了翻唱《Tell Me Why》的视频，获得大众的关注，一个月时间获得了2.7万订阅数 。</p><br>
+                <img src="images/zaonian1.jpg" alt="">
+                <img src="images/zaonian2.jpg" alt="">
+            </div>
+            <div id="6" class="main-title main-first">
+                <h3>社会活动</h3>
+                <hr class="line">
+                <img src="images/jianjie.gif" alt="">
+                <p>特洛耶·希文出生于南非约翰内斯堡。在他两岁时，全家移居至澳大利亚西部珀斯。特洛耶·希文的爸爸是房地产经纪人，出生于一个犹太家庭
+                    。妈妈是全职家庭主妇，皈依犹太教。特洛耶·希文是作为传统的犹太人长大，曾就读于一所犹太学校 。特洛耶·希文有庆祝犹太安息日
+                    。2007年，特洛耶·希文开启YouTube自媒体频道，并上传了翻唱《Tell Me Why》的视频，获得大众的关注，一个月时间获得了2.7万订阅数 。</p><br>
+                <img src="images/zaonian1.jpg" alt="">
+                <img src="images/zaonian2.jpg" alt="">
+            </div>
+            <div id="7" class="main-title main-first">
+                <h3>获奖记录</h3>
+                <hr class="line">
+                <img src="images/jianjie.gif" alt="">
+                <p>特洛耶·希文出生于南非约翰内斯堡。在他两岁时，全家移居至澳大利亚西部珀斯。特洛耶·希文的爸爸是房地产经纪人，出生于一个犹太家庭
+                    。妈妈是全职家庭主妇，皈依犹太教。特洛耶·希文是作为传统的犹太人长大，曾就读于一所犹太学校 。特洛耶·希文有庆祝犹太安息日
+                    。2007年，特洛耶·希文开启YouTube自媒体频道，并上传了翻唱《Tell Me Why》的视频，获得大众的关注，一个月时间获得了2.7万订阅数 。</p><br>
+                <img src="images/zaonian1.jpg" alt="">
+                <img src="images/zaonian2.jpg" alt="">
+            </div>
+            <div id="8" class="main-title main-first">
+                <h3>人物评价</h3>
+                <hr class="line">
+                <img src="images/jianjie.gif" alt="">
+                <p>特洛耶·希文出生于南非约翰内斯堡。在他两岁时，全家移居至澳大利亚西部珀斯。特洛耶·希文的爸爸是房地产经纪人，出生于一个犹太家庭
+                    。妈妈是全职家庭主妇，皈依犹太教。特洛耶·希文是作为传统的犹太人长大，曾就读于一所犹太学校 。特洛耶·希文有庆祝犹太安息日
+                    。2007年，特洛耶·希文开启YouTube自媒体频道，并上传了翻唱《Tell Me Why》的视频，获得大众的关注，一个月时间获得了2.7万订阅数 。</p><br>
+                <img src="images/zaonian1.jpg" alt="">
+                <img src="images/zaonian2.jpg" alt="">
+            </div>
+        </div>
+        <!-- 大侧栏 -->
+        <div class="sidebar">
+            <div>
+                <img src="images/1.png" alt="">
+            </div>
+            <div>
+                <img src="images/2.png" alt="">
+            </div>
+            <div>
+                <img src="images/3.png" alt="">
+            </div>
+            <div>
+                <img src="images/4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="photo-fixed">
+        <a href="#">
+            <img src="images/fixed.png" alt="">
+        </a>
+    </div>
+
+</body>
+
+</html>
